@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    #myTable {
+        width: 50%;
+        border: 1px solid #ddd; 
+        padding: 4px 2px 4px 4px;
+        font-size: 18px;
+        margin:5% auto;
+        background-color: rgba(128, 128, 128, 0.171);
+    }
+    #myTable td {
+        text-align: left;
+        padding: 8px;
+        width: 50%;
+    }
+    td input{
+        width:90%;
+        height: 33px;
+        outline: none;
+        float: left;
+        padding:10px;
+        border-color: rgba(0, 0, 0, 0.158);
+        border-radius: 0px 4px 4px 0px;
+        font-family: initial;
+    }
+    #submit{
+        position: relative;
+        left:50%
+    }
+    .icon{
+        text-align: center;
+        float: left;
+        color: black;
+        width: 15px;
+        padding: 6px;
+        border-color: rgba(0, 0, 0, 0.158);
+        border-radius:4px 0px 0px 4px 
+    }
+    #country{
+        width:90%;
+        height: 33px;
+        outline: none;
+        float: left;
+        padding:6px;
+        border-color: rgba(0, 0, 0, 0.158);
+        border-radius: 0px 4px 4px 0px;
+    }
+    @media screen and (max-width:800px){
+        #mytable{
+            width: 100%;
+            font-size: 12px;
+            height: 100%;
+        }
+        #myTable td {
+        text-align: left;
+        padding: 6px;
+        width: 100%;
+        float: left;
+        }
+        td input{
+        height: 27px;
+        }
+        #country{
+            height: 27px;
+        }
+        #submit{
+        position: relative;
+        left: auto;
+        right: auto;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+          <td><label for="fname">Full Name</label></td>
+          <td><i class="fa fa-user fa-border icon"aria-hidden="true"></i>
+              <input type="text" name='fname' placeholder="Full Name"></td>
+        </tr>
+        <tr>
+          <td><label for="address1">Address Line 1</label></td>
+          <td><i class="fa fa-address-book-o fa-border icon"aria-hidden="true"></i>
+              <input type="text" name="address1" placeholder="Address Line 1"></td>
+        </tr>
+        <tr>
+          <td><label for="address2">Address Line 2</label></td>
+          <td><i class="fa fa-address-book-o fa-border icon"aria-hidden="true"></i>
+              <input type="text" name="address2" placeholder="Address Line 2"></td>
+        </tr>
+        <tr>
+          <td><label for="city">City</label></td>
+          <td><i class="fa fa-building-o fa-border icon" aria-hidden="true"></i>
+              <input type="text" name="city" placeholder="City"></td>
+        </tr>
+        <tr>
+            <td><label for="state">State/Province/Region</label></td>
+            <td><i class="fa fa-map-marker fa-border icon" aria-hidden="true"></i>
+                <input type="text" name="state" placeholder="State/Province/Region"></td>
+        </tr>
+        <tr>
+            <td><label for="zip">Postal Code/ZIP</label></td>
+            <td><i class="fa fa-envelope-open-o fa-border icon" aria-hidden="true"></i>
+                <input type="number" name="zip" placeholder="Postal Code/ZIP"></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td><i class="fa fa-map-o fa-border icon" aria-hidden="true"></i>
+                <select name="country" id="country"><option value="Afghanistan" selected>Afghanistan</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><i class="fa fa-user fa-border icon"aria-hidden="true"></i>
+                <input type="text" name="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td><label for="number">Phone Number</label></td>
+            <td><i class="fa fa-user fa-border icon"aria-hidden="true"></i>
+                <input type="tel" name="tel" placeholder="Phone Number"></td>
+        </tr>
+        <tr><th><input type="submit" name="submit" id="submit"></th></tr>
+      </table>
+      
+</body>
+</html>
